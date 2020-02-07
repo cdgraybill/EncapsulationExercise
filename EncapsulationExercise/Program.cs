@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace EncapsulationExercise
 {
@@ -6,18 +7,22 @@ namespace EncapsulationExercise
     {
         static void Main(string[] args)
         {
-            Rectangle r = new Rectangle();
-            
-            Console.WriteLine($"The current area is {r.Area}");
+            Console.WriteLine("Enter a radius to find the area of a circle.");
 
-            r.GetArea(4, 7);
+            double userInput = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine();
 
-            Console.WriteLine($"The current area is {r.Area}");
+            Circle c = new Circle(userInput);
+            Console.WriteLine($"Area: {c.Area()}");
+            Console.ReadLine();
 
-            Console.WriteLine(r.Area = 0);
+            Console.WriteLine("Enter the length of a side to find the area of a square.");
 
-            Console.WriteLine($"The current area is {r.Area}");
+            userInput = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine();
 
+            Square s = new Square(userInput);
+            Console.WriteLine($"Area: {s.Area()}");
             Console.ReadLine();
         }
     }

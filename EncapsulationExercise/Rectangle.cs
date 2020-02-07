@@ -4,15 +4,15 @@ using System.Text;
 
 namespace EncapsulationExercise
 {
-    class Rectangle
-    {
-        public double Area;
+    //class Rectangle
+    //{
+    //    public double Area;
 
-        public double GetArea(int length, int width)
-        {
-            Area = length * width;
+    //    public double GetArea(int length, int width)
+    //    {
+    //        Area = length * width;
 
-            return Area;
-        }
-    }
+    //        return Area;
+    //    }
+    //}
 }

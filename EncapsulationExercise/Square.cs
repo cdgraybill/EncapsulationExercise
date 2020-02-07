@@ -4,15 +4,15 @@ using System.Text;
 
 namespace EncapsulationExercise
 {
-    class Square
-    {
-        private static double Area;
+    //class Square
+    //{
+    //    private static double Area;
 
-        public static double GetArea(int side)
-        {
-            Area = side * side;
+    //    public static double GetArea(int side)
+    //    {
+    //        Area = side * side;
 
-            return Area;
-        }
-    }
+    //        return Area;
+    //    }
+    // }
 }
